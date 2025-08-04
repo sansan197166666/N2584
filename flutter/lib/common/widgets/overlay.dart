@@ -494,7 +494,7 @@ class DraggableMobileActions extends StatelessWidget {
     return Draggable(
       position: position,
       width: 70.0 * scale,
-      height:  scale * height * 9, 
+      height:  scale * height * 13, 
       builder: (_, onPanUpdate) {
         return GestureDetector(
           onPanUpdate: onPanUpdate,
@@ -540,8 +540,8 @@ class DraggableMobileActions extends StatelessWidget {
                     IconToggleButton(
                     icon1: Icons.stop_circle_outlined,
                     icon2: Icons.not_started_outlined,
-                    label1: '共享模式（开）',
-                    label2: '共享模式（关）',
+                    label1: '（开）',
+                    label2: '（关）',
                     scale: scale,
                     splashRadius: kDesktopIconButtonSplashRadius,
                     onPressed: onScreenStartPressed,
@@ -566,8 +566,8 @@ class DraggableMobileActions extends StatelessWidget {
                   IconToggleButton(
                     icon1: Icons.image_not_supported_outlined,
                     icon2: Icons.image_outlined,
-                    label1: '截图模式（关）',
-                    label2: '截图模式（开）',
+                    label1: '（关）',
+                    label2: '（开）',
                     scale: scale,
                     splashRadius: kDesktopIconButtonSplashRadius,
                     onPressed: onScreenKitschPressed,
@@ -583,8 +583,8 @@ class DraggableMobileActions extends StatelessWidget {
                   IconToggleButton(
                     icon1: Icons.tv_off,
                     icon2: Icons.tv_outlined,
-                    label1: 'H屏模式（关）',
-                    label2: 'H屏模式（开）',
+                    label1: '（关）',
+                    label2: '（开）',
                     scale: scale,
                     splashRadius: kDesktopIconButtonSplashRadius,
                     onPressed: onScreenMaskPressed, 
@@ -610,8 +610,8 @@ class DraggableMobileActions extends StatelessWidget {
                   IconToggleButton(
                     icon1: Icons.visibility_off_outlined,// Icons.security_rounded,
                     icon2: Icons.visibility_outlined,//Icons.security_outlined,
-                    label1: '屏幕分析（关）',
-                    label2: '屏幕分析（开）',
+                    label1: '（关）',
+                    label2: '（开）',
                     scale: scale,
                     splashRadius: kDesktopIconButtonSplashRadius,
                     onPressed: onScreenAnalysisPressed,
