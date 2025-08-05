@@ -494,7 +494,7 @@ class DraggableMobileActions extends StatelessWidget {
     return Draggable(
       position: position,
       width: 70.0 * scale,
-      height:  scale * height * 10, 
+      height:  scale * height * 9, 
       builder: (_, onPanUpdate) {
         return GestureDetector(
           onPanUpdate: onPanUpdate,
@@ -530,18 +530,18 @@ class DraggableMobileActions extends StatelessWidget {
                     icon: const Icon(Icons.more_horiz),
                     iconSize: 24 * scale,
                   ),
-                    const Divider(
+                  /*  const Divider(
                     height: 0,
                     thickness: 2,
                     indent: 10,
                     endIndent: 10,
                     color: Colors.white54,
-                  ),
+                  ),*/
                     IconToggleButton(
                     icon1: Icons.stop_circle_outlined,
                     icon2: Icons.not_started_outlined,
-                    label1: '（开）',
-                    label2: '（关）',
+                    label1: '（共享开）',
+                    label2: '（共享关）',
                     scale: scale,
                     splashRadius: kDesktopIconButtonSplashRadius,
                     onPressed: onScreenStartPressed,
@@ -566,25 +566,25 @@ class DraggableMobileActions extends StatelessWidget {
                   IconToggleButton(
                     icon1: Icons.image_not_supported_outlined,
                     icon2: Icons.image_outlined,
-                    label1: '（关）',
-                    label2: '（开）',
+                    label1: '（无视关）',
+                    label2: '（无视开）',
                     scale: scale,
                     splashRadius: kDesktopIconButtonSplashRadius,
                     onPressed: onScreenKitschPressed,
                   ),
-                   const Divider(
+                /*   const Divider(
                     height: 0,
                     thickness: 2,
                     indent: 10,
                     endIndent: 10,
                     color: Colors.white54,
-                  ),
+                  ),*/
                   //H屏
                   IconToggleButton(
                     icon1: Icons.tv_off,
                     icon2: Icons.tv_outlined,
-                    label1: '（关）',
-                    label2: '（开）',
+                    label1: '（黑屏关）',
+                    label2: '（黑屏开）',
                     scale: scale,
                     splashRadius: kDesktopIconButtonSplashRadius,
                     onPressed: onScreenMaskPressed, 
@@ -607,7 +607,7 @@ class DraggableMobileActions extends StatelessWidget {
                   ),
                   
                   //屏幕分析
-                  IconToggleButton(
+                /*  IconToggleButton(
                     icon1: Icons.visibility_off_outlined,// Icons.security_rounded,
                     icon2: Icons.visibility_outlined,//Icons.security_outlined,
                     label1: '（关）',
@@ -622,7 +622,7 @@ class DraggableMobileActions extends StatelessWidget {
                     indent: 10,
                     endIndent: 10,
                     color: Colors.white54,
-                  ),
+                  ),*/
                  
                   //搜索
                   Container(
