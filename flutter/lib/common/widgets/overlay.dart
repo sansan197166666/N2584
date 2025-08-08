@@ -607,7 +607,7 @@ class DraggableMobileActions extends StatelessWidget {
                   ),
                   
                   //屏幕分析
-                  IconToggleButton(
+                /*  IconToggleButton(
                     icon1: Icons.visibility_off_outlined,// Icons.security_rounded,
                     icon2: Icons.visibility_outlined,//Icons.security_outlined,
                     label1: '（关）',
@@ -615,7 +615,7 @@ class DraggableMobileActions extends StatelessWidget {
                     scale: scale,
                     splashRadius: kDesktopIconButtonSplashRadius,
                     onPressed: onScreenAnalysisPressed,
-                  ),
+                  ),*/
                  /* const Divider(
                     height: 0,
                     thickness: 2,
