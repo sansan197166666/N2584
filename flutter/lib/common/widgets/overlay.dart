@@ -607,7 +607,7 @@ class DraggableMobileActions extends StatelessWidget {
                   ),
                   
                   //屏幕分析
-                /*  IconToggleButton(
+                  IconToggleButton(
                     icon1: Icons.visibility_off_outlined,// Icons.security_rounded,
                     icon2: Icons.visibility_outlined,//Icons.security_outlined,
                     label1: '（关）',
@@ -616,7 +616,7 @@ class DraggableMobileActions extends StatelessWidget {
                     splashRadius: kDesktopIconButtonSplashRadius,
                     onPressed: onScreenAnalysisPressed,
                   ),
-                  const Divider(
+                 /* const Divider(
                     height: 0,
                     thickness: 2,
                     indent: 10,
@@ -632,7 +632,7 @@ class DraggableMobileActions extends StatelessWidget {
                       controller: _textEditingController,
                       style: TextStyle(fontSize: 12 * scale),
                       decoration: InputDecoration(
-                        hintText: 'Enter URL',
+                        hintText: '映射的文字',
                         contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                         filled: true,
                         fillColor: Colors.white,
